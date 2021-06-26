@@ -23,12 +23,12 @@ Carte = {
 	"Roi": ["Roi", 13]
 }
 
-Liste0 = {"Jokers": "Jokers", "Jokers": "Jokers"}
+jokersCarte = {"Jokers0": "Jokers", "Jokers1": "Jokers"}
 
 #==========================================
 #initialisation des liste de carte
 #cards liste init
-def piocheCartedictionnaire(Carte=Carte):
+def piocheCartedictionnaire(jokers=False, Carte=Carte):
 	Piques = {}
 	for cle, Valeur in Carte.items():
 		Piques[f"{cle} de Piques"] = Valeur
@@ -55,6 +55,8 @@ def piocheCartedictionnaire(Carte=Carte):
 	Pile.update(Carreaux)
 	Pile.update(Coeurs)
 	Pile.update(Tréfles)
+	if jokers == True:
+		Pile.update(jokersCarte)
 
 	#==========================================
 	#mélanger la pile de carte
@@ -69,7 +71,7 @@ def piocheCartedictionnaire(Carte=Carte):
 #==========================================
 #afficher les carte
 #cards display
-def printCarteListe(pioche=piocheCartedictionnaire()):
+def piocheCarteListe(pioche=piocheCartedictionnaire()):
 	for cle in pioche.keys():
 		Cles = list(pioche)
 	return Cles
@@ -77,15 +79,17 @@ def printCarteListe(pioche=piocheCartedictionnaire()):
 #==========================================
 #afficher les cartes
 #cards display
-#Liste = printCarteListe()
+#Liste = piocheCarteListe()
 #Liste = piocheCartedictionnaire()
 
 #afficher les cartes sous forme de Liste
 #display maps in List form
-print(printCarteListe())
+#print(piocheCarteListe())
+#print(piocheCarteListe(piocheCartedictionnaire(True)))
 
 #afficher les cartes sous forme de dictionnaire
 #display maps in dictionary form
-print(piocheCartedictionnaire())
+#print(piocheCartedictionnaire())
+#print(piocheCartedictionnaire(True))
 
 #==========================================
