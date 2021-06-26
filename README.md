@@ -1,6 +1,8 @@
 # CardsGenerator
 générateur de carte en python
 
+n'esité pas a me faire des retoure sur mon discord <@229690697865756672>
+
 l'Alpha pérmer de récupérer un "paquet" de carte mélanger sous 2 forme
 
   -un dictionnaire
