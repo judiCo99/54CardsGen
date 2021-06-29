@@ -89,8 +89,8 @@ def piocheLD(jocker=False,pioche=piocheD()):
     return L, D
 
 #==========================================
-#ajouter True en variable dans les apelle de fonction pour ajouter les jocker 
-#add True in var for add jocker
+#ajouter True en variable dans les appelle de fonction pour ajouter les jocker
+#add True as a variable in the function calls to add the wildcards
 
 #stocker les cartes
 #stock cards
@@ -98,6 +98,8 @@ def piocheLD(jocker=False,pioche=piocheD()):
 #Liste = piocheL(True)
 #dictionnaire = piocheD()
 #dictionnaire = piocheD(True)
+#List, dic = piocheLD()
+#List, dic = piocheLD(True)
 
 #afficher les cartes sous forme de Liste
 #display maps in List form
@@ -109,12 +111,13 @@ def piocheLD(jocker=False,pioche=piocheD()):
 #print(piocheD())
 #print(piocheD(True))
 
-#piocheLD() retourn en une liste et un dictionaire idantique
-#print(piocheDl())     #no arg = liste and dic
-#print(piocheLD()[0]) #[0]= Liste
-#print(piocheLD()[1]) #[1]= dictionaire
-#print(piocheLD(True)) #no arg and True= liste, dic and jocker
-#print(piocheLD(True)[0]) #[0] and True= liste and jocker
-#print(piocheLD(True)[1]) #[1] and True= dictionaire and jocker
+#piocheLD() retourne à une liste et un dictionnaire identiques
+#piocheLD() return to an identical list and dictionary
+#print(piocheDl())        #no arg = list and dictionary
+#print(piocheLD()[0])     #[0] = List
+#print(piocheLD()[1])     #[1] = dictionary
+#print(piocheLD(True))    #no arg and True = list, dictionary and jocker
+#print(piocheLD(True)[0]) #[0] and True = list and jocker
+#print(piocheLD(True)[1]) #[1] and True = dictionary and jocker
 
 #==========================================
