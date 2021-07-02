@@ -7,7 +7,7 @@ import random
 #==========================================
 #dictionnaire des carte
 #cards dictionary
-Carte = {
+Cards = {
     "As": ["As", 14], 
     "2": ["2", 2], 
     "3": ["3", 3], 
@@ -23,26 +23,26 @@ Carte = {
     "Roi": ["Roi", 13]
 }
 
-jokersCarte = {"Jokers1": ["Jokers", 15], "Jokers2": ["Jokers", 15]}
+jokersCards = {"Jokers1": ["Jokers", 15], "Jokers2": ["Jokers", 15]}
 
 #==========================================
 #initialisation des liste de carte
 #cards liste init
-def piocheD(jokers=False, Carte=Carte):
+def piocheD(jokers=False, Cards=Cards):
     Piques = {}
-    for cle, Valeur in Carte.items():
+    for cle, Valeur in Cards.items():
         Piques[f"{cle} de Piques"] = Valeur
 
     Carreaux = {}
-    for cle, Valeur in Carte.items():
+    for cle, Valeur in Cards.items():
         Carreaux[f"{cle} de Carreaux"] = Valeur
 
     Coeurs = {}
-    for cle, Valeur in Carte.items():
+    for cle, Valeur in Cards.items():
         Coeurs[f"{cle} de Coeurs"] = Valeur
 
     Tréfles = {}
-    for cle, Valeur in Carte.items():
+    for cle, Valeur in Cards.items():
         Tréfles[f"{cle} de Tréfles"] = Valeur
 
 
@@ -56,7 +56,7 @@ def piocheD(jokers=False, Carte=Carte):
     Pile.update(Coeurs)
     Pile.update(Tréfles)
     if jokers == True:
-        Pile.update(jokersCarte)
+        Pile.update(jokersCards)
 
     #==========================================
     #mélanger la pile de carte
