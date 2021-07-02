@@ -69,7 +69,7 @@ do not hesitate to give me feedback on my discord <@229690697865756672>
 
 ㅤ
 
-#print(piocheDl())        #no arg = list and dictionary
+#print(piocheLD())        #no arg = list and dictionary
 
 #print(piocheLD()[0])     #[0] = List
 
