@@ -1,5 +1,5 @@
-# CardsGenerator
-python cards generator
+# 54CardsGenerator
+python 54 cards generator
 
 do not hesitate to give me feedback on my discord <@229690697865756672>
 
